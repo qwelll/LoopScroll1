@@ -62,11 +62,12 @@ static void qwelll_loopscroll_wrapTargetOffset(UIScrollView *scrollView,
 @implementation qwelllLoopScrollDelegateProxy
 
 - (instancetype)qwelll_loopscroll_initWithTarget:(id)target {
-    self = [super init];
-    if (self) {
-        _loopscrollTarget = target;
+    // 此方法名不在 ObjC init 方法族内，ARC 禁止对 self 赋值，改为先创建再设置目标。
+    qwelllLoopScrollDelegateProxy *proxy = [[self class] new];
+    if (proxy) {
+        proxy.loopscrollTarget = target;
     }
-    return self;
+    return proxy;
 }
 
 // 始终应答 willEndDragging：即使原代理没实现它，也要保证循环逻辑有机会执行；
