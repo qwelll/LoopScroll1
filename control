@@ -1,0 +1,9 @@
+Package: com.qwelll.loopscroll
+Name: 桌面循环滚动
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: SpringBoard 桌面图标页无限循环滚动
+Maintainer: qwelll
+Author: qwelll
+Section: Tweaks
+Depends: mobilesubstrate
