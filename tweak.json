@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "name": "LoopScroll",
+  "id": "loopscroll",
+  "display_name": "桌面循环滚动",
+  "class_prefix": "qwelllLoopScroll",
+  "symbol_prefix": "qwelll_loopscroll",
+  "package": "com.qwelll.loopscroll",
+  "bundle": "com.apple.springboard",
+  "sdk_version": "16.5",
+  "minimum_ios": "15.0",
+  "preferences": false,
+  "slider": false,
+  "github_actions": true
+}
